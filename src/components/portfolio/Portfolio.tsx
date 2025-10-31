@@ -16,8 +16,8 @@ const projects: Project[] = [
     category: "Property Management",
     description:
       "An elegant and modern property platform offering listings, management tools, and virtual tour integrations.",
-    image: "/imgs/properties.jpg",
-    link: "https://elitepropertieshub.com/",
+    image: "/imgs/properties.webp",
+    link: "https://owndubaiproperties.netlify.app/",
     github: "https://github.com/maheshkumawat274/IMproperties/tree/main/RealestateUi",
   },
   {
@@ -34,7 +34,7 @@ const projects: Project[] = [
     category: "IT / Web Services",
     description:
       "Official company website for Nexify Digital — an innovative IT agency offering web development, marketing, and software solutions.",
-    image: "/imgs/nexifydigital.jpg",
+    image: "/imgs/nexify.jpg",
     link: "https://nexifydigital.in/",
     github: "https://github.com/maheshkumawat274/NexifyDigital",
   },
@@ -49,10 +49,10 @@ const projects: Project[] = [
   },
   {
     name: "Rohit Prashar Portfolio",
-    category: "Personal Portfolio",
+    category: "Creator Portfolio",
     description:
-      "Personal portfolio website featuring projects, biography, and insights.",
-    image: "/imgs/rohitprashar.jpg",
+      "Creator portfolio website featuring projects, biography, and insights.",
+    image: "/imgs/rohit.jpeg",
     link: "https://rohitprashar.com/",
     github: "https://github.com/maheshkumawat274/rohitportfolio",
   },
@@ -61,7 +61,7 @@ const projects: Project[] = [
     category: "Medical / Healthcare",
     description:
       "Specialist online platform for heart care, providing medical consultations and tailored healthcare services.",
-    image: "/imgs/intro.jpg",
+    image: "/imgs/clinic.jpg",
     link: "https://globalheartclinic.com/",
     github: "https://github.com/maheshkumawat274/GlobalClinic",
   },
@@ -70,7 +70,7 @@ const projects: Project[] = [
     category: "Corporate / Business",
     description:
       "Global solutions and services showcased with a polished business-oriented layout.",
-    image: "/imgs/new4.jpg",
+    image: "/imgs/inc.jpg",
     link: "https://wellglobalinc.com/",
     github: "https://github.com/maheshkumawat274/NewLogisticsWebsite",
   },

@@ -43,10 +43,10 @@ const HeroSection: React.FC = () => {
             Together we the people achieve more than any single person could ever do alone.
           </p>
 
-          <button className="bg-green-500 hover:bg-green-600 text-black cursor-pointer font-semibold px-6 py-3 rounded-md flex items-center justify-center md:justify-start gap-2 transition-all duration-300 mx-auto md:mx-0 cursor-target">
+          <a href="#contactus" className="bg-green-500 hover:bg-green-600 text-black cursor-pointer font-semibold px-6 py-3 rounded-md flex items-center justify-center md:justify-start gap-2 transition-all duration-300 mx-auto md:mx-0 cursor-target w-56">
             GETTING STARTED
             <span className="text-xl">→</span>
-          </button>
+          </a>
         </div>
       </div>
     </section>
