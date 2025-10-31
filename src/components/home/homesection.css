@@ -1,0 +1,53 @@
+.homeimg{
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  top:0;
+}
+@media (max-width:1500px) and (min-width:1080px) {
+  .homeimg{
+    right:80px
+  }
+}
+@media (max-width:950px) and (min-width:768px) {
+  .homeimg{
+    right:0px
+}
+  
+}
+@media (max-width:768px) and (min-width:600px) {
+  .homeimg{
+    right:130px;
+    top:200px
+  }
+  
+  
+}
+@media (max-width:640px) and (min-width:560px) {
+  .homeimg{
+    right:60px;
+    top:200px
+  }
+  
+}
+@media (max-width:560px) and (min-width:500px) {
+  .homeimg{
+    right:60px;
+    top:200px
+  }
+  
+}
+@media (max-width:500px) and (min-width:400px) {
+  .homeimg{
+    right: 10px;
+    top:250px
+  }
+  
+}
+@media (max-width:400px) and (min-width:340px) {
+  .homeimg{
+    right: 10px;
+    top:290px
+  }
+  
+}
