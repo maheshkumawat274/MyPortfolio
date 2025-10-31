@@ -80,7 +80,7 @@ const Portfolio: React.FC = () => {
   return (
     <section id="projects" className="relative bg-[#0d0f10] text-[#bfa5ff] py-10 px-4 md:px-24 overflow-hidden">
       {/* Background Text */}
-      <h1 className="absolute top-10 left-8 md:left-16 text-[50px] SM:text-[150px] font-extrabold text-white/5 uppercase tracking-widest select-none">
+      <h1 className="absolute top-10 left-8 md:left-16 text-[50px] sm:text-[150px] font-extrabold text-white/5 uppercase tracking-widest select-none">
         MY PROJECTS
       </h1>
 
