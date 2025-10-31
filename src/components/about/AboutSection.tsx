@@ -34,7 +34,7 @@ const AboutSection: React.FC = () => {
           ABOUT US
         </h3>
         <h1 className="text-3xl lg:text-5xl font-extrabold leading-snug uppercase">
-          I AM FRONTEND WEB DEVELOPER
+          I'M A FRONTEND WEB DEVELOPER
         </h1>
         <p className="text-[#bfa5ff] leading-relaxed">
           Front-End Developer with strong ReactJS skills and backend experience using NodeJS. Capable of handling projects, clients, and full web solutions. Experienced in building responsive, user-friendly interfaces and integrating APIs efficiently. Passionate about delivering clean code, optimized performance, and complete end-to-end solutions.

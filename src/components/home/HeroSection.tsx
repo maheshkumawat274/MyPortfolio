@@ -32,16 +32,17 @@ const HeroSection: React.FC = () => {
         {/* LEFT TEXT CONTENT */}
         <div className="w-full md:w-1/2 space-y-6 text-start sm:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-6xl font-bold sm:font-extrabold leading-tight uppercase">
-            <span className="text-green-500">Imagination</span>{" "}
-            <span className="text-[#bfa5ff]">is more</span>
-            <br />
-            <span className="text-[#bfa5ff]">important than</span>{" "}
-            <span className="text-[#bfa5ff]">knowledge</span>
-          </h1>
+  <span className="text-green-500">Crafting</span>{" "}
+  <span className="text-[#bfa5ff]">modern</span>
+  <br />
+  <span className="text-[#bfa5ff]">and responsive</span>{" "}
+  <span className="text-[#bfa5ff]">websites</span>
+</h1>
 
-          <p className="text-[#bfa5ff] text-base md:text-lg border-l-2 border-green-500 pl-4 mx-auto md:mx-0">
-            Together we the people achieve more than any single person could ever do alone.
-          </p>
+<p className="text-[#bfa5ff] text-base md:text-lg border-l-2 border-green-500 pl-4 mx-auto md:mx-0">
+  I’m a Frontend Web Developer passionate about building seamless digital experiences that blend design with functionality.
+</p>
+
 
           <a href="#contactus" className="bg-green-500 hover:bg-green-600 text-black cursor-pointer font-semibold px-6 py-3 rounded-md flex items-center justify-center md:justify-start gap-2 transition-all duration-300 mx-auto md:mx-0 cursor-target w-56">
             GETTING STARTED
