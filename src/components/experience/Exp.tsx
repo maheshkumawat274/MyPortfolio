@@ -128,7 +128,7 @@ const ExperienceSection: React.FC = () => {
           {skills[activeTab].map((skill, i) => (
             <button
               key={i}
-              className="border border-dotted border-[#bfa5ff] text-[#bfa5ff] font-extrabold text-lg px-8 py-4 rounded-2xl hover:bg-[#bfa5ff]/10 transition-all duration-300"
+              className="border border-dotted border-[#bfa5ff] text-[#bfa5ff] font-extrabold text-lg px-4 md:px-8 py-2 md:py-4 rounded-2xl hover:bg-[#bfa5ff]/10 transition-all duration-300"
             >
               {skill}
             </button>

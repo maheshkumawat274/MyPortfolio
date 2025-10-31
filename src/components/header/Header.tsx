@@ -73,13 +73,13 @@ const Header: React.FC = () => {
         }`}
       >
         {/* Logo */}
-<div className="flex items-center justify-center overflow-hidden h-14 md:h-16">
-  <img
-    src="/imgs/logo2.png"
-    alt="Mahesh Logo"
-    className="object-cover w-48 md:w-56 scale-125"
-  />
-</div>
+        <div className="flex items-center justify-center overflow-hidden h-14 md:h-16">
+          <img
+            src="/imgs/logo2.png"
+            alt="Mahesh Logo"
+            className="object-cover w-48 md:w-56 scale-125"
+          />
+        </div>
 
 
         {/* Desktop Menu */}
@@ -112,55 +112,65 @@ const Header: React.FC = () => {
       </div>
 
       {/* --- Mobile Side Menu --- */}
-      <div
-        className={`fixed top-0 right-0 h-full w-64 bg-gray-900 text-[#bfa5ff] transform transition-transform duration-500 ease-in-out z-50 ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+      {/* --- Mobile Side Menu --- */}
+<div
+  className={`fixed top-0 right-0 h-full w-64 bg-[#0d0f10] text-[#bfa5ff] transform transition-transform duration-500 ease-in-out shadow-lg z-50 ${
+    menuOpen ? "translate-x-0" : "translate-x-full"
+  }`}
+>
+  {/* Top Section (Logo + Close) */}
+  <div className="flex justify-between items-center bg-black px-5 py-3 border-b border-gray-700">
+    <div className="flex items-center justify-center overflow-hidden h-12 md:h-14">
+      <img
+        src="/imgs/logo2.png"
+        alt="Mahesh Logo"
+        className="object-contain w-40 md:w-44 scale-110"
+      />
+    </div>
+
+    <button
+      onClick={() => setMenuOpen(false)}
+      className="text-2xl text-green-400 hover:text-green-500 transition-all"
+    >
+      <FaTimes />
+    </button>
+  </div>
+
+  {/* Navigation Links */}
+  <nav className="flex flex-col gap-4 px-6 py-6 text-lg">
+    {[
+      { label: "Home", href: "#home" },
+      { label: "About Us", href: "#aboutus" },
+      { label: "Experience", href: "#experience" },
+      { label: "Projects", href: "#projects" },
+      { label: "Contact Us", href: "#contactus" },
+    ].map((link, index) => (
+      <a
+        key={index}
+        href={link.href}
+        onClick={() => setMenuOpen(false)}
+        className="hover:text-green-400 relative transition-all duration-300 group"
       >
-        <div className="flex justify-between items-center bg-black px-4 py-3 border-b border-gray-700">
-          {/* Logo */}
-          <div className="flex items-center justify-center overflow-hidden h-14 md:h-16">
-            <img
-              src="/imgs/logo2.png"
-              alt="Mahesh Logo"
-              className="object-cover w-48 md:w-56 scale-125"
-            />
-          </div>
+        {link.label}
+        <span className="absolute left-0 -bottom-1 w-0 h-px bg-green-400 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    ))}
+  </nav>
 
-          <button
-            onClick={() => setMenuOpen(false)}
-            className="text-2xl text-green-400"
-          >
-            <FaTimes />
-          </button>
-        </div>
+  {/* Bottom Border + Text */}
+  <div className="absolute bottom-0 left-0 w-full border-t border-gray-700 text-center py-3 text-sm text-gray-500">
+    © {new Date().getFullYear()} Mahesh | Portfolio
+  </div>
+</div>
 
-        <nav className="flex flex-col gap-4 px-6 py-6 text-lg">
-          <a href="#home" className="hover:text-green-400 transition-all">
-            Home
-          </a>
-          <a href="#aboutus" className="hover:text-green-400 transition-all">
-            About Us
-          </a>
-          <a href="#experience" className="hover:text-green-400 transition-all">
-            Experience
-          </a>
-          <a href="#projects" className="hover:text-green-400 transition-all">
-            Projects
-          </a>
-          <a href="#contactus" className="hover:text-green-400 transition-all">
-            Contact Us
-          </a>
-        </nav>
-      </div>
+{/* Overlay */}
+{menuOpen && (
+  <div
+    onClick={() => setMenuOpen(false)}
+    className="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-500 z-40"
+  />
+)}
 
-      {/* Overlay */}
-      {menuOpen && (
-        <div
-          onClick={() => setMenuOpen(false)}
-          className="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-500"
-        />
-      )}
     </header>
   );
 };
