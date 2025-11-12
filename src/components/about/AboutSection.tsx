@@ -41,9 +41,9 @@ const AboutSection: React.FC = () => {
         </p>
 
         <a
-          href="/MaheshResume.pdf"  // apne public folder me PDF ka exact naam yahan likh
+          href="/imgs/MYCV.pdf"  // apne public folder me PDF ka exact naam yahan likh
           download="Mahesh-Kumar-Resume.pdf"
-          className="bg-green-500 hover:bg-green-600 text-black cursor-pointer font-semibold px-6 py-3 rounded-md flex items-center gap-2 transition-all duration-300 cursor-target w-48"
+          className="bg-green-500 hover:bg-green-600 text-black cursor-pointer font-semibold px-6 py-3 rounded-md flex justify-center items-center gap-2 transition-all duration-300 cursor-target w-48"
         >
           DOWNLOAD CV
           <span className="text-xl">→</span>
