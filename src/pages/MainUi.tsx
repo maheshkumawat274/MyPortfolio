@@ -7,6 +7,7 @@ import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 import HeroSection from '../components/home/HeroSection'
 import Portfolio from '../components/portfolio/Portfolio'
+import AnimatedGalaxySection from '../components/ui/AnimatedGlaxy'
 
 const MainUi = () => {
   return (
@@ -16,6 +17,7 @@ const MainUi = () => {
       <div className='mt-18 md:mt-24'>
         <HeroSection/>
         <AboutSection/>
+        <AnimatedGalaxySection/>
         <ExperienceSection/>
         <WhatWeDo/>
         <Portfolio/>
